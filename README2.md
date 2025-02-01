@@ -466,7 +466,36 @@ plt.show()
     
 ![png](output_16_0.png)
     
+# Exploring bivariate relationships
+To begin exploring the relationship between the number of cannabis-related businesses per capita with other social and economic indiators,
+we first create new variables by dividing by county population for sales tax, number of businesses, total number of crimes, marijuana-related drug 
+arrests, and drug-related arrests. The poverty rate is already a per capita index. Note that the social and economic indicators are measured in 2022 or earlier, shortly prior to the legalization of recreational cannabis. Spearman's rho is calculated for each relationship and shown in the scatter graphs below. Spearman's rho is a non-parametric alternative to Pearson's and does not rely on the assumptions of underlying distributions of each indicator. 
+
+
+```python
+# Standardize by population
+#Sales_Tax, Businesses, Total_crimes, Marijuana_DrugArrests, Total_DrugArrests, Total_CannBus
+
+countycann_df["Sales_Tax_std"] = countycann_df["Sales_Tax"] / countycann_df["Population"]
+countycann_df["Businesses_std"] = countycann_df["Businesses"] / countycann_df["Population"]
+countycann_df["Total_crimes_std"] = countycann_df["Total_crimes"] / countycann_df["Population"]
+countycann_df["Marijuana_DrugArrests_std"] = countycann_df["Marijuana_DrugArrests"] / countycann_df["Population"]
+countycann_df["Total_DrugArrests_std"] = countycann_df["Total_DrugArrests"] / countycann_df["Population"]
+countycann_df["Total_CannBus_std"] = countycann_df["Total_CannBus"] / countycann_df["Population"]
+
+df_sorted = countycann_df.sort_values(by='Total_CannBus_std')
+df_sorted
+
+```
+
+
+    
+![png](output_19_0.png)
+    
 
 
 
+```python
+
+```python
 
