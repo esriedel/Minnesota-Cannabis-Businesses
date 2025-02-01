@@ -223,4 +223,153 @@ countycann_df.head()
 </table>
 </div>
 
+# Checking merged datafile
+Looking at the descriptive statistics for the data set, almost all indicators are heavily skewed because over 63% of the
+state's population lives in the Minneapolis-St. Paul Metropolitan Area with approximately 20% of the state's population living 
+in Hennepin County alone.There are also some missing values. Since it's a small dataset, I will look to see where the missing values are.
+One problem is a county is named Saint Louis in one data set and St. Louis in another. Another problem is that Traverse County has no cannabis-related businesses so that is showing up as missing data. In the notes removed, one note for Lake of the Woods, "In 2021, crime data was not reported for all twelve months.
+We confirmed in original list of registered businesses that none were present for Traverse County. So we will leave total crimes for Lake of the Woods County as  missing value.
 
+```
+countycann_df.describe()
+```
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Population</th>
+      <th>Households</th>
+      <th>Poverty_Perc</th>
+      <th>Sales_Tax</th>
+      <th>Businesses</th>
+      <th>Total_crimes</th>
+      <th>Marijuana_DrugArrests</th>
+      <th>Total_DrugArrests</th>
+      <th>Total_CannBus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>8.700000e+01</td>
+      <td>87.000000</td>
+      <td>87.000000</td>
+      <td>8.700000e+01</td>
+      <td>87.000000</td>
+      <td>86.000000</td>
+      <td>87.000000</td>
+      <td>87.000000</td>
+      <td>86.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>6.561394e+04</td>
+      <td>25909.528736</td>
+      <td>0.096179</td>
+      <td>5.879315e+07</td>
+      <td>1580.551724</td>
+      <td>1562.546512</td>
+      <td>62.632184</td>
+      <td>165.724138</td>
+      <td>49.151163</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.596184e+05</td>
+      <td>64539.926591</td>
+      <td>0.029108</td>
+      <td>2.012913e+08</td>
+      <td>3808.607997</td>
+      <td>5641.053745</td>
+      <td>129.843566</td>
+      <td>344.764587</td>
+      <td>123.385624</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.360000e+03</td>
+      <td>1439.000000</td>
+      <td>0.032510</td>
+      <td>1.301824e+06</td>
+      <td>102.000000</td>
+      <td>4.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.107900e+04</td>
+      <td>4573.500000</td>
+      <td>0.075946</td>
+      <td>5.178800e+06</td>
+      <td>357.500000</td>
+      <td>71.250000</td>
+      <td>6.500000</td>
+      <td>21.500000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.229000e+04</td>
+      <td>8923.000000</td>
+      <td>0.094384</td>
+      <td>1.282542e+07</td>
+      <td>670.000000</td>
+      <td>220.000000</td>
+      <td>17.000000</td>
+      <td>57.000000</td>
+      <td>18.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>4.437300e+04</td>
+      <td>17378.500000</td>
+      <td>0.115306</td>
+      <td>3.120732e+07</td>
+      <td>1186.000000</td>
+      <td>764.000000</td>
+      <td>59.500000</td>
+      <td>167.000000</td>
+      <td>38.500000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.281565e+06</td>
+      <td>528547.000000</td>
+      <td>0.208834</td>
+      <td>1.769021e+09</td>
+      <td>32248.000000</td>
+      <td>45545.000000</td>
+      <td>992.000000</td>
+      <td>2880.000000</td>
+      <td>1029.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+```
+
+```python
+# Replace missing value for Traverse County with 0.
+countycann_df['Total_CannBus'] = countycann_df['Total_CannBus'].fillna(0)
+
+#Merge Saint Louis and St. Louis into one record.
+import pandas as pd
+
+# Step 1: Select rows to merge
+rows_to_merge = countycann_df.iloc[[68, 72]]
+
+# Step 2: Replace missing values
+merged_row = rows_to_merge.iloc[0].combine_first(rows_to_merge.iloc[1])  # Fill missing values from the second row
+
+# Step 3: Create a new row with a combined ID
+merged_row['County'] = '1-2'  # Custom ID for the merged row
+
+# Step 5: Drop old rows
+countycann_df = countycann_df.drop(index=[68, 72])
+
+# Step 6: Append the merged row
+countycann_df = pd.concat([countycann_df, pd.DataFrame([merged_row])], ignore_index=True)
+```
