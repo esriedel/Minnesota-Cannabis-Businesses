@@ -21,5 +21,9 @@ import pandas as pd
 import numpy as py
 ```
 
+```
+# Load the data sheet from the Office of Cannabis Management
+df_regbus = pd.read_excel('Registered_Cannabis_Bus_cleaned.xlsx', sheet_name='HDCP List Of Registered Busines')
+```
 
 
