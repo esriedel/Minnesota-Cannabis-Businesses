@@ -342,7 +342,8 @@ print(f"Total number of duplicate records: {overall_duplicates2_count}")
     [138 rows x 2 columns]
     Total number of duplicate records: 449
     
-
+# Dropping a set of duplicated cases
+Since the unit of analysis is the individual business, a decision was made to drop cases where the same business name and street address was identical, indicating the same business had multiple licenses. Since information on specific types of licenses is unavailable, the questions about which types of licenses were held by these business is out of scope.
 
 ```python
 # Drop duplicates based on the 'Name' column
@@ -546,6 +547,8 @@ print(duplicate_counts)
     121                                        Zero Proof        2
     
 
+# Preparing data for integration with other data sets.
+After removing duplicates with the same business name and address, the data set was aggregated into a county-level data set for integration with other county-level measures and use with chloropleth maps.
 
 ```python
 
