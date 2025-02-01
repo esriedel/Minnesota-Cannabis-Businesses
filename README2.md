@@ -378,92 +378,12 @@ countycann_df = pd.concat([countycann_df, pd.DataFrame([merged_row])], ignore_in
 
 
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Create a histogram
-sns.histplot(countycann_df["Population"])
-plt.xlabel("Population")
-plt.ylabel("Count")
-plt.title("Histogram of county population in Minnesota")
-1281565
-plt.text(1200000, 2, "County", fontsize=8, color='red')
-plt.text(1200000, 4, "Hennepin", fontsize=8, color='red')
-plt.text(500000, 2, "County", fontsize=8, color='red')
-plt.text(500000, 4, "Ramsey", fontsize=8, color='red')
-```
-
-
-
-
-    Text(500000, 4, 'Ramsey')
-
-
-
-
-    
+   
 ![png](output_12_1.png)
     
-
-
-
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Create a histogram
-sns.histplot(countycann_df["Total_CannBus"])
-plt.xlabel("Number of registered cannabis-related businesses")
-plt.ylabel("Count")
-plt.title("Histogram of registered cannabis-related businesses in Minnesota")
-plt.text(900, 2, "County", fontsize=8, color='red')
-plt.text(900, 4, "Hennepin", fontsize=8, color='red')
-plt.text(400, 2, "County", fontsize=8, color='red')
-plt.text(400, 4, "Ramsey", fontsize=8, color='red')
-```
-
-
-
-
-    Text(400, 4, 'Ramsey')
-
-
-
-
-    
+   
 ![png](output_13_1.png)
-    
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Create a scatter plot
-sns.scatterplot(x="Total_CannBus_std", y="Total_CannBus", data=countycann_df)
-plt.xlabel("Number of registered cannabis-related businesses Per Capita")
-plt.ylabel("Number of registered cannabis-related businesses")
-plt.title("Scatter Plot of number of registered cannabis-related business by registered cannabis-related businesses per capita")
-
-plt.text(0.0045, 2, "County", fontsize=8, color='red')
-plt.text(0.0045, 30, "Cook", fontsize=8, color='red')
-plt.text(0.003, 2, "County", fontsize=8, color='red')
-plt.text(0.003, 30, "Kittson", fontsize=8, color='red')
-plt.text(0.0001, 1000, "County", fontsize=8, color='red')
-plt.text(0.0001, 1050, "Hennepin", fontsize=8, color='red')
-plt.text(0.0001, 400, "County", fontsize=8, color='red')
-plt.text(0.0001, 450, "Ramsey", fontsize=8, color='red')
-
-#plt.text(400, 2, "County", fontsize=8, color='red')
-#plt.text(400, 4, "Ramsey", fontsize=8, color='red')
-
-
-# Show the plot
-plt.show()
-```
-
-
-    
 ![png](output_16_0.png)
     
 # Exploring bivariate relationships
@@ -492,10 +412,27 @@ df_sorted
     
 ![png](output_19_0.png)
     
+![png](output_19_0.png)
+      
+![png](output_20_0.png)
+    
+![png](output_21_0.png)
+    
+![png](output_22_0.png)
+    
+![png](output_23_0.png)
+    
+![png](output_24_0.png)
+    
 
 
 
 ```python
+# In preparation for merging this data with a geojson file, we need to make sure the key variables are named the same.                                                       
+countycann_df['COUNTY_NAM'] = countycann_df['County'].replace({'1-2': 'Saint Louis', 'Lac qui Parle': 'Lac Qui Parle'})
 
-```python
+countycann_df
+```
+
+
 
