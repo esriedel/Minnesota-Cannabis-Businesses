@@ -26,4 +26,8 @@ import numpy as py
 df_regbus = pd.read_excel('Registered_Cannabis_Bus_cleaned.xlsx', sheet_name='HDCP List Of Registered Busines')
 ```
 
+```
+df_regbus.head(5)
+```
+
 
