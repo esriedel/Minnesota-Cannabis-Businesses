@@ -365,7 +365,10 @@ df_unique_regbus.info()
     dtypes: int64(1), object(6)
     memory usage: 272.8+ KB
     
-
+# Identifying out-of-state versus Minnesota businesses registered with as cannabis-related business in Minnesota.
+After removing businesses with the same name and street address, 96.9% of the businesses are located in Minnesota. The states with the highest
+numers of cannabis-related businesses outside of Minnesota (but still registered in Minnesota) are Wisconsin (21), California (21), Colorado (15), and
+Florida (15).
 
 ```python
 frequency_table = df_unique_regbus['State'].value_counts()
