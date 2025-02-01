@@ -31,3 +31,88 @@ df_regbus.head(5)
 ```
 
 
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Record ID</th>
+      <th>Business Name</th>
+      <th>Street address (No PO Boxes)</th>
+      <th>City</th>
+      <th>State</th>
+      <th>ZIP Code</th>
+      <th>County</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1455</td>
+      <td>Peace Dog Estate, LLC</td>
+      <td>4515 N Placita De las Chacras</td>
+      <td>Tucson</td>
+      <td>AZ</td>
+      <td>85718</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1890</td>
+      <td>Riff Hemp</td>
+      <td>798 Lighthouse Ave Suite#238</td>
+      <td>Monterrey</td>
+      <td>CA</td>
+      <td>93940</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1950</td>
+      <td>Radix Labs, Inc.</td>
+      <td>529 Patchett St</td>
+      <td>Napa</td>
+      <td>CA</td>
+      <td>94559</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2229</td>
+      <td>True Bloom Wellness</td>
+      <td>1621 West 25th Street #17</td>
+      <td>Los Angeles</td>
+      <td>CA</td>
+      <td>90732</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2401</td>
+      <td>Koi CBD</td>
+      <td>14631 Best Ave</td>
+      <td>Norwalk</td>
+      <td>CA</td>
+      <td>90650</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
