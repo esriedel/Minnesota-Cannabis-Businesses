@@ -373,3 +373,66 @@ countycann_df = countycann_df.drop(index=[68, 72])
 # Step 6: Append the merged row
 countycann_df = pd.concat([countycann_df, pd.DataFrame([merged_row])], ignore_index=True)
 ```
+# Exploring the data
+
+
+
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create a histogram
+sns.histplot(countycann_df["Population"])
+plt.xlabel("Population")
+plt.ylabel("Count")
+plt.title("Histogram of county population in Minnesota")
+1281565
+plt.text(1200000, 2, "County", fontsize=8, color='red')
+plt.text(1200000, 4, "Hennepin", fontsize=8, color='red')
+plt.text(500000, 2, "County", fontsize=8, color='red')
+plt.text(500000, 4, "Ramsey", fontsize=8, color='red')
+```
+
+
+
+
+    Text(500000, 4, 'Ramsey')
+
+
+
+
+    
+![png](output_12_1.png)
+    
+
+
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create a histogram
+sns.histplot(countycann_df["Total_CannBus"])
+plt.xlabel("Number of registered cannabis-related businesses")
+plt.ylabel("Count")
+plt.title("Histogram of registered cannabis-related businesses in Minnesota")
+plt.text(900, 2, "County", fontsize=8, color='red')
+plt.text(900, 4, "Hennepin", fontsize=8, color='red')
+plt.text(400, 2, "County", fontsize=8, color='red')
+plt.text(400, 4, "Ramsey", fontsize=8, color='red')
+```
+
+
+
+
+    Text(400, 4, 'Ramsey')
+
+
+
+
+    
+![png](output_13_1.png)
+    
+
+
