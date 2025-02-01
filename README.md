@@ -8,7 +8,7 @@ What is the initial distribution of cannabis-related businesses in the state?
 How does the distribution of cannabis-related businesses relate to existing cannabis use?
 Are cannabis-related businesses distribute evenly across economic status across the state?
 
-# Cleaning list of registered cannabis businesses in Minnesota
+# Initial cleaning list of registered cannabis businesses in Minnesota
 The Office of Cannabis Management (OCM) provides a downloaded list of registered businesses that sell products in person or online and manufacturers/wholesalers that have voluntarily registered. https://mn.gov/ocm/businesses/cannabinoid-products/registered-businesses.jsp
 
 This data was reviewed in Excel. In total, there are 4,381 registered businesses. A crosstab of county showed, 111 values of "None". These are businesses that have out-of-state addresses with the exception of 4 businesses that had Minnesota addresses. These four were recoded with correct county information. In addition, there were four business with Minnesota addresses but listed as None on County. These were recoded with correct County information. In the state codes, MN showed up as two values. One of which had an additional space. They were recoded as having no space. In one case, Mn was replaced with MN (no spaces). In addition, one county was listed as Tulsa. Upon examination, the business was from Tulsa, OK and recoded as "None" for County. A county was identified as "New Prauge", which is not a county. Looking at the street address, the business lies in Le Sueur County was recoded as Le Sueur County.
@@ -140,7 +140,8 @@ df_regbus.isnull().sum()
     dtype: int64
 
 
-
+# Identifying duplicate cases
+In the data file, we check for duplicate cases by identifying cases with the same name and same street address. However, duplicate case here means likely indicates the business has multiple types of licenses with the Office of Cannabis Management rather than an error in record keeping. The type of license was not information available however. There are 33 duplicate records of business with more than one license. We also check for duplicate cases as defined only by having the same business name. These however, have different street addresses. Based on inspection of the data, there are 449 cases listing a business name that has multiple business locations.
 
 ```python
 # Identify duplicate rows for businesses under same name and location 
