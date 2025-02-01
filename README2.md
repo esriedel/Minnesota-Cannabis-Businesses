@@ -435,4 +435,38 @@ plt.text(400, 4, "Ramsey", fontsize=8, color='red')
 ![png](output_13_1.png)
     
 
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create a scatter plot
+sns.scatterplot(x="Total_CannBus_std", y="Total_CannBus", data=countycann_df)
+plt.xlabel("Number of registered cannabis-related businesses Per Capita")
+plt.ylabel("Number of registered cannabis-related businesses")
+plt.title("Scatter Plot of number of registered cannabis-related business by registered cannabis-related businesses per capita")
+
+plt.text(0.0045, 2, "County", fontsize=8, color='red')
+plt.text(0.0045, 30, "Cook", fontsize=8, color='red')
+plt.text(0.003, 2, "County", fontsize=8, color='red')
+plt.text(0.003, 30, "Kittson", fontsize=8, color='red')
+plt.text(0.0001, 1000, "County", fontsize=8, color='red')
+plt.text(0.0001, 1050, "Hennepin", fontsize=8, color='red')
+plt.text(0.0001, 400, "County", fontsize=8, color='red')
+plt.text(0.0001, 450, "Ramsey", fontsize=8, color='red')
+
+#plt.text(400, 2, "County", fontsize=8, color='red')
+#plt.text(400, 4, "Ramsey", fontsize=8, color='red')
+
+
+# Show the plot
+plt.show()
+```
+
+
+    
+![png](output_16_0.png)
+    
+
+
+
 
