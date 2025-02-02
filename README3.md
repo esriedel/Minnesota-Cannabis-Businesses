@@ -52,13 +52,35 @@ legend = MacroElement()
 legend._template = Template(template)
 
 ```
-# Minnesota counties with number of cannabis-related businesses
+# MN counties with number of cannabis-related businesses
 The map below shows the number of cannabis-related businesses by county. As expected, the darker regions are located in areas of high
 population around the Minneapolis-St. Paul area.
 
 ![png](MN_map_cannabis.png)
 
-# Minnesota counties with number of cannabis-related businesses per capita
-The map below shows the same map of Minnesota except with cannabis-related businesses per capita. 
+# MN counties with number of per capital cannabis-related businesses
+The map below shows the same map of Minnesota except with cannabis-related businesses per capita. The map shows a much different pattern
+of distribution with counties in northern Minnesota having the highest density of cannabis-related businesses, topped off by Cook County
+in the far northeast of the state. There is somewhat lesser density in the southern counties though both regions are clearly more 
+dense in the number of businesses than the most populous Twin Cities.
 
 ![png](MN_map_cannabispercapita.png)
+
+# Marking off locations of 11 of Minnesota's Indian Tribal governments
+To this same map of cannabis-related businesses per capita, we add the locations of the headquarters of 11 federally recognized Indian tribes 
+in Minnesota. 
+
+
+* Bois Forte Band of Chippewa	Nett Lake, MN	48.1000° N	93.0000° W
+* Fond du Lac Band of Lake Superior Chippewa	Cloquet, MN	46.7211° N	92.4597° W
+* Grand Portage Band of Lake Superior Chippewa	Grand Portage, MN	47.9633° N	89.6917° W
+* Leech Lake Band of Ojibwe	Cass Lake, MN	47.3800° N	94.6000° W
+* Lower Sioux Indian Community	Near Morton, MN	44.5511° N	94.9844° W
+* Mille Lacs Band of Ojibwe	Near Onamia, MN	46.0819° N	93.6672° W
+* Prairie Island Indian Community	Near Red Wing, MN	44.6514° N	92.6302° W
+* Red Lake Nation	Red Lake, MN	47.8761° N	95.0000° W
+* Shakopee Mdewakanton Sioux Community	Prior Lake, MN	44.7133° N	93.4225° W
+* Upper Sioux Community	Near Granite Falls, MN	44.7500° N	95.4600° W
+* White Earth Nation	White Earth, MN	47.0900° N	95.8500° 
+
+![png](MN_map_can_percapita_tribes.png)
