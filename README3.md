@@ -68,8 +68,11 @@ dense in the number of businesses than the most populous Twin Cities.
 
 # Marking off locations of 11 of Minnesota's Indian Tribal governments
 To this same map of cannabis-related businesses per capita, we add the locations of the headquarters of 11 federally recognized Indian tribes 
-in Minnesota. 
-
+in Minnesota. In northern Minnesota, the density of cannabis-related businesses appears to align to Minnesota tribal areas. Under the 2023
+Minnesota state statute legalizing recreational Minnesota, tribal areas are exempt from licensing requirements which were anticipated to
+take 1-2 two years to be fully implemented. Minnesota tribes are to enter into compacts with Minnesota state government regarding the 
+regulation of businesses but this still allows businesses on tribal lands to operate pending finalization of those compacts. Not 
+surprisingly, some cannabis-related businesses were immedidately opened on tribal land.
 
 * Bois Forte Band of Chippewa	Nett Lake, MN	48.1000° N	93.0000° W
 * Fond du Lac Band of Lake Superior Chippewa	Cloquet, MN	46.7211° N	92.4597° W
