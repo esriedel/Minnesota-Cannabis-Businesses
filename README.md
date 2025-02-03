@@ -1,13 +1,11 @@
-# MN cannabis
-Exploratory data analysis of cannabis businesses in Minnesota following legalization in 2023
+# Distribution of Minnesota Cannabis-Releated Businesses Following Legalization in 2023
 
-Cannabis was legalized in Minnesota for medicinal use in 2014 and for recreational use in 2023. As part of the 2023 legislation, the Office of Cannabis Management was established to set up a regulatory framework along with 12 types of commercial licenses. By law, Minnesota's 11 Indian Tribal governments are exempt from most of state regulations.
+Cannabis was legalized in Minnesota for medicinal use in 2014 and for recreational use in 2023. As part of the 2023 legislation, the Office of Cannabis Management was established to set up a regulatory framework along with 12 types of commercial licenses. In 2023, 39 states had legalized cannabis for medical purposes and 24 states had legalized it for recreational purposes with several states legalizing cannabis as early as 2013. A recent review of the social and economic effects ([Brown, Cohen, and Felix, 2024](https://www.kansascityfed.org/Research%20Working%20Papers/documents/9825/rwp23-10browncohenfelix.pdf)) by the Federal Reserve of Kansas City across states that had legalized cannabis found overall that states both increased state income and property values but also homelesseness, substance use disorders, and arrests.
 
 This analysis aims to answer the following questions about cannabis-related businesses following legalization:
-* What is the initial distribution of cannabis-related businesses in the state?
-* How does the distribution of cannabis-related businesses relate to existing cannabis use?
-* Are cannabis-related businesses distribute evenly across economic status across the state?
-* What impacts the distribution of cannabis-related businesses?
+* How are cannabis-related businesses distributed across the state?
+* Is the distribution of businesses related to any economic or social indicators?
+* What has impacted the early distribution of cannabis-related businsses in the state?
 
 # Initial cleaning list of registered cannabis businesses in Minnesota
 The Office of Cannabis Management (OCM) provides a downloaded list of registered businesses that sell products in person or online and manufacturers/wholesalers that have voluntarily registered. https://mn.gov/ocm/businesses/cannabinoid-products/registered-businesses.jsp
