@@ -228,7 +228,8 @@ disproportionately located in areas of high or low prosperity or crime in the fi
 ![png](output_23_0.png)
     
 ![png](output_24_0.png)
-    
+
+![png](output_25_0.png)
 
 # Examining the geographic distribution of cannabis-related businsses
 
