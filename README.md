@@ -197,12 +197,14 @@ in Hennepin County alone.
 </div>
 
    
-![png](output_12_1.png)
-    
-   
 ![png](output_13_1.png)
 
-![png](output_16_0.png)
+![png](output_14_1.png)
+
+![png](output_16_1.png)
+
+![png](output_17_0.png)
+
     
 # Exploring bivariate relationships
 To begin exploring the relationship between the number of cannabis-related businesses per capita with other social and economic indiators,
