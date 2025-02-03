@@ -7,6 +7,12 @@ This analysis aims to answer the following questions about cannabis-related busi
 * Is the distribution of businesses related to any economic or social indicators?
 * What has impacted the early distribution of cannabis-related businsses in the state?
 
+In order to answer these questions, we will take the following steps to conduct an exploratory data analysis:
+* Identification and cleaning of data on Minnesota cannabis-related businesses
+* Creating a county-level dataset that combines data on cannabis-related businesses and social and economic indicators
+* Conducting bivariate analysis to examine the relationship between cannabis-related businesses and other indicators
+* Examining the geographic distribution of cannabis-related businesses using chloropleth maps
+  
 # Initial cleaning list of registered cannabis businesses in Minnesota
 The Office of Cannabis Management (OCM) provides a downloaded list of registered businesses that sell products in person or online and manufacturers/wholesalers that have voluntarily registered. https://mn.gov/ocm/businesses/cannabinoid-products/registered-businesses.jsp
 
