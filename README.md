@@ -55,7 +55,7 @@ We also check for duplicate cases as defined only by having the same business na
 * Haskell's Inc                             10
 
 
-# Preparing county-level data set
+# Build county-level data set for integration with data on number of cannabis-related businesses
 After removing duplicates with the same business name and address, the data set was aggregated into a county-level data set for integration with other county-level measures and use with chloropleth maps.
 
 ```python
@@ -67,7 +67,6 @@ print(agg_regbus.info())
 
 ```
 
-# Build county-level data set for integration with data on number of cannabis-related businesses
 Import and select county-level data for analysis with cannabis businesses from the Association of Minnesota Counties.
 Specifically, we would like to compare the growth of cannabis businesses against population, economic, and social indicators.
 Removed asterisks and notes from worksheets.
