@@ -211,17 +211,14 @@ in Hennepin County alone.
     
 # Exploring bivariate relationships
 To begin exploring the relationship between the number of cannabis-related businesses per capita with other social and economic indiators,
-we first create new variables by dividing by county population for sales tax, number of businesses, total number of crimes, marijuana-related drug 
+we first create new variables by creating per capita indicators for sales tax, number of businesses, total number of crimes, marijuana-related drug 
 arrests, and drug-related arrests. The poverty rate is already a per capita index.  Spearman's rho is calculated for each relationship and shown in the scatter graphs below. Spearman's rho is a non-parametric alternative to Pearson's and does not rely on the assumptions of underlying distributions of each indicator. 
 
 None of the graphs below suggest an association between a social or economic indicator and the number of cannabis-related businesses. In addition, none of
 Spearman rho correlation coefficients indicate a statistically significant association. Note that the social and economic indicators are measured in 2022 or earlier, shortly prior to the legalization of recreational cannabis. There is no preliminary evidence that cannabis-related businesses are either
 disproportionately located in areas of high or low prosperity or crime in the first couple years of legalization. 
     
-![png](output_19_0.png)
     
-![png](output_19_0.png)
-      
 ![png](output_20_0.png)
     
 ![png](output_21_0.png)
@@ -236,36 +233,32 @@ disproportionately located in areas of high or low prosperity or crime in the fi
 
 # Examining the geographic distribution of cannabis-related businsses
 
-In preparation for merging this data with a geojson file, we need to make sure the key variables are named the same.  'Lac qui Parle' as 'Lac Qui Parle' to match.
-The merged case for "Saint Louis" / "St. Louis" is coded as "Saint Louis". 
+In preparation for merging this data with a geojson file, we need to make sure the key variables are named the same.  'Lac qui Parle' was renamed as 'Lac Qui Parle' to match to geojson file. The merged case for "Saint Louis" / "St. Louis" is coded as "Saint Louis". 
 
 County boundary data obtained from [Minnesota Geospatial Commons](https://gisdata.mn.gov/dataset/bdry-counties). I converted SHP files to geojson data using [Mygeodata](https://mygeodata.cloud/converter/shp-to-geojson).
 
 
 # Mapping cannabis-related businesses in Minnesota
-There were no clear associations of the distribution of cannabis-related businesses in Minnesota based on social or economic indicators. To examine the
+There were no clear associations between cannabis-related businesses in Minnesota and social or economic indicators. To examine the
 geographic distribution of cannabis-related businesses, we use folium to build chloropleth maps. Minnesota county boundary maps data is dowloaded 
 from the Minnesota Geospatial Commons (https://gisdata.mn.gov/en_AU/dataset/us-mn-state-metc-bdry-census2020counties-ctus). It is not available for 
-download in the required geojson format so we convert the SHP files to geojson data using a free service from Mygeodata (https://mygeodata.cloud/converter/shp-to-geojson). I then used folium to construct chloropleth maps that combined county-level data with Minnesota county geographic boundaries.
-
-
+download in the required geojson format so I converted the SHP files to geojson data using a free service from Mygeodata (https://mygeodata.cloud/converter/shp-to-geojson). I then used folium to construct chloropleth maps that combined county-level data with Minnesota county geographic boundaries.
 
 ## MN counties with number of cannabis-related businesses
 The map below shows the number of cannabis-related businesses by county. As expected, the darker regions are located in areas of high
 population around the Minneapolis-St. Paul area.
-
 ![png](MN_map_cannabis.png)
 
 ## MN counties with number of per capital cannabis-related businesses
 The map below shows the same map of Minnesota except with cannabis-related businesses per capita. The map shows a much different pattern
 of distribution with counties in northern Minnesota having the highest density of cannabis-related businesses, topped off by Cook County
-in the far northeast of the state. There is somewhat lesser density in the southern counties though both regions are clearly more 
-dense in the number of businesses than the most populous Twin Cities.
+in the far northeast of the state. There is a somewhat lesser density in the southern counties though both regions are clearly more 
+dense in the number of businesses than the more populous Twin Cities.
 
 ![png](MN_map_cannabispercapita.png)
 
 ## Marking off locations of 11 of Minnesota's Indian Tribal governments
-To this same map of cannabis-related businesses per capita, we add the locations of the headquarters of 11 federally recognized Indian tribes 
+To this same map of cannabis-related businesses per capita, I added the locations of the headquarters of 11 federally recognized Indian tribes 
 in Minnesota. In northern Minnesota, the density of cannabis-related businesses appears to align to Minnesota tribal areas. Under the 2023
 Minnesota state statute legalizing recreational Minnesota, tribal areas are exempt from licensing requirements which were anticipated to
 take 1-2 two years to be fully implemented. Minnesota tribes are to enter into compacts with Minnesota state government regarding the 
