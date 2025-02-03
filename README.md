@@ -247,6 +247,7 @@ download in the required geojson format so I converted the SHP files to geojson 
 ## MN counties with number of cannabis-related businesses
 The map below shows the number of cannabis-related businesses by county. As expected, the darker regions are located in areas of high
 population around the Minneapolis-St. Paul area.
+
 ![png](MN_map_cannabis.png)
 
 ## MN counties with number of per capital cannabis-related businesses
