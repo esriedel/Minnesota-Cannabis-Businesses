@@ -230,11 +230,10 @@ disproportionately located in areas of high or low prosperity or crime in the fi
 ![png](output_24_0.png)
     
 
+# Examining the geographic distribution of cannabis-related businsses
 
+In preparation for merging this data with a geojson file, we need to make sure the key variables are named the same.  'Lac qui Parle' as 'Lac Qui Parle' to match.
+The merged case for "Saint Louis" / "St. Louis" is coded as "Saint Louis". 
 
-```python
-# In preparation for merging this data with a geojson file, we need to make sure the key variables are named the same.                                                       
-countycann_df['COUNTY_NAM'] = countycann_df['County'].replace({'1-2': 'Saint Louis', 'Lac qui Parle': 'Lac Qui Parle'})
+County boundary data obtained from [Minnesota Geospatial Commons](https://gisdata.mn.gov/dataset/bdry-counties). I converted SHP files to geojson data using [Mygeodata](https://mygeodata.cloud/converter/shp-to-geojson).
 
-countycann_df
-```
