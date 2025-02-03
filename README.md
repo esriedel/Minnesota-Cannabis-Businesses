@@ -75,6 +75,125 @@ From worksheet: Public Safety
 * Drug Abuse Arrests: Marijuana (2020)
 * Drug Abuse Arrests: Total (2020)
 
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Population</th>
+      <th>Households</th>
+      <th>Poverty_Perc</th>
+      <th>Sales_Tax</th>
+      <th>Businesses</th>
+      <th>Total_crimes</th>
+      <th>Marijuana_DrugArrests</th>
+      <th>Total_DrugArrests</th>
+      <th>Total_CannBus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>8.700000e+01</td>
+      <td>87.000000</td>
+      <td>87.000000</td>
+      <td>8.700000e+01</td>
+      <td>87.000000</td>
+      <td>86.000000</td>
+      <td>87.000000</td>
+      <td>87.000000</td>
+      <td>87.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>6.561394e+04</td>
+      <td>25909.528736</td>
+      <td>0.096179</td>
+      <td>5.879315e+07</td>
+      <td>1580.551724</td>
+      <td>1562.546512</td>
+      <td>62.632184</td>
+      <td>165.724138</td>
+      <td>48.586207</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>1.596184e+05</td>
+      <td>64539.926591</td>
+      <td>0.029108</td>
+      <td>2.012913e+08</td>
+      <td>3808.607997</td>
+      <td>5641.053745</td>
+      <td>129.843566</td>
+      <td>344.764587</td>
+      <td>122.779302</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.360000e+03</td>
+      <td>1439.000000</td>
+      <td>0.032510</td>
+      <td>1.301824e+06</td>
+      <td>102.000000</td>
+      <td>4.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.107900e+04</td>
+      <td>4573.500000</td>
+      <td>0.075946</td>
+      <td>5.178800e+06</td>
+      <td>357.500000</td>
+      <td>71.250000</td>
+      <td>6.500000</td>
+      <td>21.500000</td>
+      <td>8.500000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.229000e+04</td>
+      <td>8923.000000</td>
+      <td>0.094384</td>
+      <td>1.282542e+07</td>
+      <td>670.000000</td>
+      <td>220.000000</td>
+      <td>17.000000</td>
+      <td>57.000000</td>
+      <td>18.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>4.437300e+04</td>
+      <td>17378.500000</td>
+      <td>0.115306</td>
+      <td>3.120732e+07</td>
+      <td>1186.000000</td>
+      <td>764.000000</td>
+      <td>59.500000</td>
+      <td>167.000000</td>
+      <td>38.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.281565e+06</td>
+      <td>528547.000000</td>
+      <td>0.208834</td>
+      <td>1.769021e+09</td>
+      <td>32248.000000</td>
+      <td>45545.000000</td>
+      <td>992.000000</td>
+      <td>2880.000000</td>
+      <td>1029.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 # Merge with county-level data on number of cannabis-related businesses per county and rename variables.
 
 ```python
