@@ -1,7 +1,7 @@
 # Minnesota Cannabis-Releated Businesses Following Legalization
 
 Cannabis was legalized in Minnesota for medicinal use in 2014 and for recreational use in 2023. As part of the 2023 legislation, the Office of Cannabis Management was established to set up a regulatory framework along with 12 types of commercial licenses. These licenses apply to cannabis productions, distribution, and retail including hemp-derived products including those using CBD and found in beverages and foods. This framework was slow to be implemented, however, and in 2024 
-only (35.6% of license applications)[https://mn.gov/ocm/businesses/equity-applicants/verification-and-licensing-timeline.jsp] were approved. Minnesota's Indian Tribal government are exempt from license requirements and were among the first to open up public dispensaries. 
+only [35.6% of license applications](https://mn.gov/ocm/businesses/equity-applicants/verification-and-licensing-timeline.jsp) were approved. Minnesota's Indian Tribal government are exempt from license requirements and were among the first to open up public dispensaries. 
 
 In 2023, 39 states had legalized cannabis for medical purposes and 24 states had legalized it for recreational purposes with several states legalizing cannabis as early as 2013. A recent review of the social and economic effects ([Brown, Cohen, and Felix, 2024](https://www.kansascityfed.org/Research%20Working%20Papers/documents/9825/rwp23-10browncohenfelix.pdf)) by the Federal Reserve of Kansas City across states that had legalized cannabis found overall that states both increased state income and property values but also homelesseness, substance use disorders, and arrests.
 
